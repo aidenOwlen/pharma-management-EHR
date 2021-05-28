@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CategDialog</class>
+ <widget class="QDialog" name="CategDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>540</width>
+    <height>512</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>540</width>
+    <height>512</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>540</width>
+    <height>512</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(93, 213, 177, 255), stop:1 rgba(255, 255, 255, 255))</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>185</x>
+     <y>10</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:green;
+font: 87 10pt &quot;Segoe UI Black&quot;;
+background:transparent;</string>
+   </property>
+   <property name="text">
+    <string>Products Categories</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="CategoryList">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>411</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:bold;
+color:blue</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Prescription drugs</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Otc drugs</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cosmetics</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Confectionery / Snacks</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Gift items</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Toys</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>General &amp; sundries</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Stationary &amp; books</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="CategoryInput">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>100</y>
+     <width>281</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:bold;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AddCategory">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>100</y>
+     <width>121</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:bold;
+background-color: rgb(17, 159, 69);</string>
+   </property>
+   <property name="text">
+    <string>ADD</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="DeleteCategory">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>450</y>
+     <width>411</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:bold;
+background-color: rgb(17, 159, 69);
+</string>
+   </property>
+   <property name="text">
+    <string>DELETE</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

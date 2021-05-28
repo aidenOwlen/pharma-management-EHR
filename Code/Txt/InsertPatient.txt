@@ -1,0 +1,12 @@
+Dialog name :  InsertPatient
+IName
+IGender :combobox : H,F
+IPhone1, Iphone2
+ITrn
+IInsurance
+INhf
+IBalance
+IAddress
+IDob : date of birth
+IFlag : Checkbox
+IOk

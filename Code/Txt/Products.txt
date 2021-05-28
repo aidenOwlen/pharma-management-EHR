@@ -1,0 +1,91 @@
+Dialog Name : ProductsForm
+COMMON : 
+AddProduct
+NewProduct
+DeleteProduct
+ProductClose
+ProductNumber
+ProductDescription
+ProductGeneric
+ProductSupplier
+ProductAlternate
+Groupe de radiobox : ProductType
+ProductStock
+ProductNonStock
+ProductService&
+
+Details section: *****************************************************************
+Group Quantity :
+QHand
+QFull
+Qloose
+units of measure : QUnits
+Size/Units : QSize
+QMax
+QReorderLvl
+QReorderQty
+QBackOrder
+
+Price tab : ##########
+PriceCost
+PriceMarkup
+PriceEach
+PriceWhole
+PriceAvg
+PriceLast
+PriceBreak : Price break at 
+PriceBreak2 : break price
+PriceNhfBenefit : NHF benefit
+
+Tax code : ###############
+group radio : TaxCode
+ProductTaxable
+ProductZero
+ProductExempted
+
+Sale tax % : ProductSaleTax
+
+MiscTab :############
+Checkboxes : 
+DiscontinueProduct
+NhfCoverProduct
+
+ProductBinNo
+ProductMaxDosage
+ProductExpiry : combo expiry
+
+Group radio : ProductPrescription
+Yes = PrescriptionYes
+No = PrescriptionNo
+
+Barcode Section : ****************************************************
+Pic or whatever is this thing : ProductGraphic
+BarCodeProduct : Barcode
+NdcProduct : NDC
+CodePostNetProduct : combobox below NDC
+
+Radio group : ProductBarOption
+ProductBarBarcode
+ProductBarNumber
+
+Checkboxes : 
+IncludeProductName
+IncludeProductNumber
+
+Button print : PrintProduct
+
+
+Movement Section : ****************************************
+Checkbox : CheckProductUpdate 
+Sales history : 
+Date : SaleDateLabel
+Quantity : SaleQtyLabel
+
+Purchases history : 
+PurchaseDateLabel
+PurchaseQtyLabel
+Table : MovementTable
+
+
+
+

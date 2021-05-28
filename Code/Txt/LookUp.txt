@@ -1,0 +1,5 @@
+Dialog name : LookupDialog
+Lookup Script No : LookNo
+Date To View : LookDate
+Table : LookTree
+Delete : LookDelete

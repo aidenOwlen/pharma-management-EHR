@@ -1,0 +1,10 @@
+History :
+Object Name : History
+
+Label name : HistoryPatientName
+Refill : HRefill
+Print : HPrint
+Close : HClose
+
+Table 1 : HistoryTable1
+Table2 : HistoryTable2

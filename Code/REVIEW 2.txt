@@ -1,0 +1,45 @@
+Patient tab : HISTORY 
+1)A quick explanation of columns to avoid any misunderstanding.
+prescription -prescription number : What is that ? sorry Rx number 
+S Date- date prescription was processed
+name- name of patient
+doctor- name of prescribing doctor
+co-pay - amount customer pays after insurances.
+drug cost- cost of drugs * quantities
+total -- cost of drugs * quantities + fees + tax
+insurance - total of all insurances paid  (NHF + INS 1 + INS 2+ INS 3)
+Invoice - receipt number if prescrtion has been paid for at point of sale.
+Use- Use that processed prescription for payment at point of sale.
+Source- delete
+Cashed - Y or N indicating whether or not prescription has been payed for by processing at point of sale
+Discount- discount amount on the prescription
+rx time- Time rx was saved to database by pressing F8. then what's the difference between
+S Date and rx rime. sorry s date is that actual date the prescription as payed for at the cashier. so it's the same as Rx since he pays the same day ? no, sometimes the customers pay the next day. Assuming they have called in their prescription for processeing, then come in at a alter day to pick up and pay.
+How the program would know ? the Sdate one it has been presented at the Point of sale. 
+Refill ? Print ? Price2 ?
+i think we wnt through these in the last review.??
+Yes sorry I just want to be sure what to print .
+Still not sure what Price2 is for in the second tab. delete that.
+OK got it
+F7-Quote ? will tell you this later.
+
+by the way we need to change the name from Automated Pharmacy to something else. choose a catchy name.
+are we finished for now?
+ 
+I have to go now? anything else?
+Ok got it , Yes still need some things but if you need to go we'll just let them for the next part . How long do you think it will take?
+The software or clarifications ? Clarifications I'd say 5 minutes. ok lets do it.
+Thanks, it's just Sale history & purchase History I've built their database but need you to explain them to avoid that I go wrong with their database as it would be harder to update**
+I've put them into tabs. SO you want me to explain what each tab is for?
+Basically, and if it's a good idea that I made them into tabs instead of menu because I think dispensay sales & purchase history and inventory are the main tabs of the software. 
+
+.
+ok good idea. but Point Of Sale will also be a main tab.
+acutally I would actually just keep Dispensary, Point of Sale and Inventory of Main tabs
+Ok, What do you suggest , we go through point of sale now and let history to next time or go through history ?Point of sale  now.
+Ok good, the things is when there are connections between my databases it's harder to update later to add something related to it. OOooo ok. well lets go throught those first then 
+through columns
+Receipt :
+ :..
+If you need to go I'll take screenshots and send you through fiverr.,  Ok do that. because I need to meet my wife nbefore she kills me. Ok good we'll do that , it will be good to have clarifications soon as I'll start t owork on it again in 2 hours.
+Thanks for your time :) ok thank you too.

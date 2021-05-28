@@ -1,0 +1,3353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1312</width>
+    <height>897</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1312</width>
+    <height>897</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1312</width>
+    <height>897</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1331</width>
+      <height>877</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+background:qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(32, 221, 225, 179), stop:0.497326 rgba(0, 0, 0, 147), stop:1 rgba(0, 169, 255, 147));
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Dispensary_tab">
+     <attribute name="title">
+      <string>Dispensary</string>
+     </attribute>
+     <widget class="QPushButton" name="BPrint">
+      <property name="geometry">
+       <rect>
+        <x>658</x>
+        <y>761</y>
+        <width>321</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>F6-Print</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BNext">
+      <property name="geometry">
+       <rect>
+        <x>982</x>
+        <y>761</y>
+        <width>321</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;font:bold;</string>
+      </property>
+      <property name="text">
+       <string>F8-Next =&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BLookup">
+      <property name="geometry">
+       <rect>
+        <x>335</x>
+        <y>791</y>
+        <width>321</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>F5-View Rx</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BCalculator">
+      <property name="geometry">
+       <rect>
+        <x>335</x>
+        <y>731</y>
+        <width>321</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>Calculator</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>420</y>
+        <width>411</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:white;font:bold;</string>
+      </property>
+      <property name="title">
+       <string>Preview</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>22</x>
+         <y>21</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;font:bold;
+background:transparent;</string>
+       </property>
+       <property name="text">
+        <string>Total</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>22</x>
+         <y>50</y>
+         <width>23</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color:white;font:bold;</string>
+       </property>
+       <property name="text">
+        <string>NHF</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>22</x>
+         <y>79</y>
+         <width>76</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(154, 0, 0);
+background:transparent;
+color:white;font:bold;</string>
+       </property>
+       <property name="text">
+        <string>INS 1</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>22</x>
+         <y>108</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+color:white;font:bold;</string>
+       </property>
+       <property name="text">
+        <string>INS 2 &amp; 3</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>22</x>
+         <y>137</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;color: rgb(154, 0, 0);
+color:white;font:bold;</string>
+       </property>
+       <property name="text">
+        <string>Co-pay</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>166</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;font:bold;
+background:transparent;</string>
+       </property>
+       <property name="text">
+        <string>Agreed discount</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>22</x>
+         <y>195</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;font:bold;
+background:transparent;</string>
+       </property>
+       <property name="text">
+        <string>Discount</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="RTotal">
+       <property name="geometry">
+        <rect>
+         <x>121</x>
+         <y>21</y>
+         <width>137</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;
+color: rgb(154, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>$0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="RNhf">
+       <property name="geometry">
+        <rect>
+         <x>121</x>
+         <y>50</y>
+         <width>137</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;
+color:red</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="RDrug">
+       <property name="geometry">
+        <rect>
+         <x>121</x>
+         <y>79</y>
+         <width>137</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;
+color: rgb(154, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>$0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="R31">
+       <property name="geometry">
+        <rect>
+         <x>122</x>
+         <y>109</y>
+         <width>65</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;
+color:black;</string>
+       </property>
+       <property name="text">
+        <string>$0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="R32">
+       <property name="geometry">
+        <rect>
+         <x>193</x>
+         <y>109</y>
+         <width>65</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;
+color:black;</string>
+       </property>
+       <property name="text">
+        <string>$0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="RCo">
+       <property name="geometry">
+        <rect>
+         <x>121</x>
+         <y>137</y>
+         <width>137</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;
+color: rgb(0, 0, 166);</string>
+       </property>
+       <property name="text">
+        <string>$0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="RAgreed">
+       <property name="geometry">
+        <rect>
+         <x>121</x>
+         <y>166</y>
+         <width>137</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+</string>
+       </property>
+       <property name="text">
+        <string>$0.00</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="RDiscount">
+       <property name="geometry">
+        <rect>
+         <x>121</x>
+         <y>195</y>
+         <width>68</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;
+color:red</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>221</x>
+         <y>200</y>
+         <width>53</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;</string>
+       </property>
+       <property name="text">
+        <string>$0.00</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>19</x>
+         <y>230</y>
+         <width>381</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(104, 104, 104);
+
+background:transparent;
+color: rgb(154, 0, 0);
+
+color:rgba(0, 0, 0, 147);
+color:white;
+font: 75 10pt &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>NHF Pays: $ 0.00, Patient Pays $ 0.00</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="ApplyMain">
+       <property name="geometry">
+        <rect>
+         <x>305</x>
+         <y>5</y>
+         <width>93</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+</string>
+       </property>
+       <property name="text">
+        <string>Apply</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="BQuote">
+      <property name="geometry">
+       <rect>
+        <x>658</x>
+        <y>791</y>
+        <width>321</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>F7-Quote</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>710</y>
+        <width>1301</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BInternet">
+      <property name="geometry">
+       <rect>
+        <x>658</x>
+        <y>731</y>
+        <width>321</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>Internet</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>420</y>
+        <width>411</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="ButtonText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="ButtonText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="WindowText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="ButtonText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="0">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+font:bold;
+color:white;</string>
+      </property>
+      <property name="title">
+       <string>Patient</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>41</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>110</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font: 90 bold 8pt &quot;MS Shell Dlg 2&quot;;
+background:transparent;</string>
+       </property>
+       <property name="text">
+        <string>Doctor</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>178</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font: 90 bold 8pt &quot;MS Shell Dlg 2&quot;;
+background:transparent;</string>
+       </property>
+       <property name="text">
+        <string>Source</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="PName">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>40</y>
+         <width>221</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;
+color:black;
+font:bold;</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="PSource">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>177</y>
+         <width>221</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;
+color:black;
+font:bold;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Private</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Public</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="PDoctor">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>110</y>
+         <width>221</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:white;
+color:black;
+font:bold;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>445</x>
+        <y>420</y>
+        <width>411</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+font:bold;
+color:white;font:bold;</string>
+      </property>
+      <property name="title">
+       <string>Rx</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QLineEdit" name="RxN">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>43</y>
+         <width>134</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: white;
+color:black;
+font:bold;
+
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>67</x>
+         <y>45</y>
+         <width>36</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:bold;
+background:transparent;
+color:white;</string>
+       </property>
+       <property name="text">
+        <string>Rx No</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="NewScript">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>40</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+</string>
+       </property>
+       <property name="text">
+        <string>New Script</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>120</y>
+         <width>311</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(104, 104, 104);
+font: 75 italic 10pt \&quot;8514oem\&quot;;
+background:transparent;
+color:white;
+font: 75 italic 13pt  &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>The Automated Pharmacy</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="MyDate">
+      <property name="geometry">
+       <rect>
+        <x>1115</x>
+        <y>5</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(163, 8, 29);
+background:transparent;
+font:bold;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Tue Jun  5 02:57:12 2018</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BClose">
+      <property name="geometry">
+       <rect>
+        <x>982</x>
+        <y>731</y>
+        <width>321</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>Close</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="MainTableX">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>1291</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="179">
+            <red>32</red>
+            <green>221</green>
+            <blue>225</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="NoBrush">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="179">
+            <red>32</red>
+            <green>221</green>
+            <blue>225</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="HighlightedText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="AlternateBase">
+          <brush brushstyle="SolidPattern">
+           <color alpha="147">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="179">
+            <red>32</red>
+            <green>221</green>
+            <blue>225</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="NoBrush">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="179">
+            <red>32</red>
+            <green>221</green>
+            <blue>225</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="HighlightedText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="AlternateBase">
+          <brush brushstyle="SolidPattern">
+           <color alpha="147">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="179">
+            <red>32</red>
+            <green>221</green>
+            <blue>225</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>120</red>
+            <green>120</green>
+            <blue>120</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="NoBrush">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="179">
+            <red>32</red>
+            <green>221</green>
+            <blue>225</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="HighlightedText">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="AlternateBase">
+          <brush brushstyle="SolidPattern">
+           <color alpha="147">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+background:rgba(32, 221, 225, 179);
+alternate-background-color:rgba(0, 0, 0, 147);
+font:bold;
+</string>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="rowCount">
+       <number>20</number>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column>
+       <property name="text">
+        <string>DRUG</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="background">
+        <color>
+         <red>161</red>
+         <green>193</green>
+         <blue>56</blue>
+        </color>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>QTY</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>COST</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>INS</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>FEES</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>LABEL</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DAYS</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>REFILLS</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>EXTENDED</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>TAX</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>NHF</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>VOID</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DISCOUNT</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PRINTED</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>OS</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>IND</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DIAGC</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="BLabel">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>791</y>
+        <width>321</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>F3-Label</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BDrugs">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>761</y>
+        <width>321</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>F2-Drugs</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BPatient">
+      <property name="geometry">
+       <rect>
+        <x>335</x>
+        <y>761</y>
+        <width>321</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>F4-Patient</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BReversal">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>731</y>
+        <width>321</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>Reversal</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BDelete">
+      <property name="geometry">
+       <rect>
+        <x>982</x>
+        <y>791</y>
+        <width>321</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>CTRL-F9-Delete Rx</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="AddPresc">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>8</y>
+        <width>93</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="DeletePresc">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>8</y>
+        <width>93</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white;font:bold;</string>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Sales_Tab">
+     <attribute name="title">
+      <string>Sales History</string>
+     </attribute>
+     <widget class="QTableWidget" name="SHTable1">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>70</y>
+        <width>1301</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgba(32, 221, 225, 179);
+alternate-background-color:rgba(0, 0, 0, 147);
+
+font:bold;
+</string>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="rowCount">
+       <number>30</number>
+      </property>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column>
+       <property name="text">
+        <string>RECEIPT</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>SALEDATE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>SALETIME</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>SUBTOTAL</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>TAX</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DISCOUNT</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>SALETYPE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>USR</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>EXEMPTED</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PAYMENT</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PAYMODE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>NAME</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Address</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>CHARGEAc</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>CARDNUMBER</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>INVOICE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>RXND</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>BALANCE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>2 nd PAYMENT</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PAYMODE2</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QTableWidget" name="SHTable2">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>650</y>
+        <width>701</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgba(32, 221, 225, 179);
+font:bold,</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>DESCRIPTION</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>QUANTITY</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PRICE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DISCOUNT</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>TAX</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Receipt</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>STATUS</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="SHPrint">
+      <property name="geometry">
+       <rect>
+        <x>1208</x>
+        <y>790</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>Print</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>14</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: blue;
+font: 87 bold 11pt &quot;Arial Black&quot;;
+background:transparent;
+font: 75 bold 14pt  &quot;Unispace&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Sales history</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>2</y>
+        <width>481</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:white;
+font:bold;</string>
+      </property>
+      <property name="title">
+       <string>Range</string>
+      </property>
+      <widget class="QDateEdit" name="SHDate1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>24</y>
+         <width>110</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;
+color:black</string>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="SHDate2">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>24</y>
+         <width>110</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;
+color:black;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>26</y>
+         <width>21</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>To</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="SHRefresh">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;
+</string>
+       </property>
+       <property name="text">
+        <string>Refresh</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="SHClose">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>20</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;
+</string>
+       </property>
+       <property name="text">
+        <string>Close</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="SMy_Date">
+      <property name="geometry">
+       <rect>
+        <x>1115</x>
+        <y>660</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:white;
+font:bold;
+</string>
+      </property>
+      <property name="text">
+       <string>Tue Jun  5 02:57:12 2018</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Purchase History</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1281</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>261</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: red;
+
+background:transparent;
+font: 75 bold 14pt  &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>PURCHASE HISTORY</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="PHClose">
+       <property name="geometry">
+        <rect>
+         <x>1170</x>
+         <y>20</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;
+</string>
+       </property>
+       <property name="text">
+        <string>Close</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>110</y>
+        <width>53</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:blue;
+font:bold;
+background:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Product</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="PHProduct">
+      <property name="geometry">
+       <rect>
+        <x>88</x>
+        <y>110</y>
+        <width>211</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:white;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PHPrint">
+      <property name="geometry">
+       <rect>
+        <x>1190</x>
+        <y>110</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(75, 226, 226);
+alternate-background-color: rgb(75, 226, 226);
+color:black;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>Print</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="PHTable">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>1281</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgba(32, 221, 225, 179);
+alternate-background-color:rgba(0, 0, 0, 147);
+font:bold;</string>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="rowCount">
+       <number>30</number>
+      </property>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column>
+       <property name="text">
+        <string>SUPPLIER</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PACKAGE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>NUMBER</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DATE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>QUANTITY</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>COST</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>GCT</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>TAXED</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>LOTNO</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>EXPIRY</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DISCOUNT</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ITEM</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Prv Qty</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="PHTotals">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>800</y>
+        <width>53</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:white;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>Totals : </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PHQty">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>800</y>
+        <width>53</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:white;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>Qty : </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PHValue">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>800</y>
+        <width>53</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:white;
+font:bold;</string>
+      </property>
+      <property name="text">
+       <string>Value : </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PMy_Date">
+      <property name="geometry">
+       <rect>
+        <x>1115</x>
+        <y>800</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;
+color:white;font:bold;</string>
+      </property>
+      <property name="text">
+       <string>Tue Jun  5 02:57:12 2018</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Inventory</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>8</y>
+        <width>1281</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>16</x>
+         <y>27</y>
+         <width>53</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:transparent;
+font:bold;
+font: 75 bold 8pt  &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Lookup</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="DrugsList">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>23</y>
+         <width>191</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;
+font:bold;
+color:black;
+</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="SearchDrugs">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>20</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;
+font:bold;
+font: 75 bold 8pt  &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="EditDrugs">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>20</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;
+font:bold;
+font: 75 bold 8pt  &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Edit</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RefreshDrugs">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>20</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;
+font:bold;
+font: 75 bold 8pt  &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Refresh</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="CloseDrugs">
+       <property name="geometry">
+        <rect>
+         <x>1180</x>
+         <y>20</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color:white;
+font:bold;
+font: 75 bold 8pt  &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Close</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="NewDrugs">
+       <property name="geometry">
+        <rect>
+         <x>1080</x>
+         <y>20</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+color:white;
+font:bold;
+font: 75 bold 8pt  &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>New</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="DeleteDrugs">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>20</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;
+font:bold;
+font: 75 bold 8pt  &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="SelectDrug">
+       <property name="geometry">
+        <rect>
+         <x>980</x>
+         <y>20</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;
+font:bold;
+font: 75 bold 8pt  &quot;Unispace&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Select</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="SearchByWhat">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>20</y>
+         <width>142</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-color: rgb(0, 240, 240);
+font:bold;
+font: 75 bold 8pt  &quot;Unispace&quot;;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>DESCRIPTION</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NUM</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BARCODE</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+     <widget class="QTableWidget" name="DrugsTable">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>1281</width>
+        <height>701</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="179">
+            <red>32</red>
+            <green>221</green>
+            <blue>225</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="NoBrush">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="179">
+            <red>32</red>
+            <green>221</green>
+            <blue>225</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="AlternateBase">
+          <brush brushstyle="SolidPattern">
+           <color alpha="147">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="179">
+            <red>32</red>
+            <green>221</green>
+            <blue>225</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="NoBrush">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="179">
+            <red>32</red>
+            <green>221</green>
+            <blue>225</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="AlternateBase">
+          <brush brushstyle="SolidPattern">
+           <color alpha="147">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="179">
+            <red>32</red>
+            <green>221</green>
+            <blue>225</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>120</red>
+            <green>120</green>
+            <blue>120</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Base">
+          <brush brushstyle="NoBrush">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="Window">
+          <brush brushstyle="SolidPattern">
+           <color alpha="179">
+            <red>32</red>
+            <green>221</green>
+            <blue>225</blue>
+           </color>
+          </brush>
+         </colorrole>
+         <colorrole role="AlternateBase">
+          <brush brushstyle="SolidPattern">
+           <color alpha="147">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgba(32, 221, 225, 179);
+alternate-background-color:rgba(0, 0, 0, 147);
+font:bold;</string>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="showGrid">
+       <bool>true</bool>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::SolidLine</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="cornerButtonEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>30</number>
+      </attribute>
+      <attribute name="verticalHeaderHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DESCRIPTION</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>GENERIC NAME</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>NUMBER</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>TYPE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>CATEGORY</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PACKSIZE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>QOH</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PRICE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>TAXCODE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PRODCODE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>SUP_NAME</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>BARCODE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>TOTAL QTY</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>MISC</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ALTERNATE SUPPLIER</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>LOOSE QTY</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>UNIT OF MEASURE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>MAX QTY</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>REORDER LVL</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>REORDER QTY</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>BACKORDER</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>MARKUP</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>EACH PRICE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>WHOLE PRICE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>AVG COST</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>LAST COST</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PRICE BREAK AT</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>BREAK PRICE</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>NHF BENEFIT</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PRESCRIPTION</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="Drug_Date">
+      <property name="geometry">
+       <rect>
+        <x>1115</x>
+        <y>790</y>
+        <width>181</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;color:rgb(163, 8, 29);
+color:white;font:bold;</string>
+      </property>
+      <property name="text">
+       <string>Tue Jun  5 02:57:12 2018</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1312</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGfdgfd">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="SettingsMenu"/>
+    <addaction name="actionRx_No"/>
+   </widget>
+   <widget class="QMenu" name="menuDf">
+    <property name="title">
+     <string>Dispensary</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuPoint_of_sale">
+    <property name="title">
+     <string>Point of sale</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSetup">
+    <property name="title">
+     <string>Setup</string>
+    </property>
+    <widget class="QMenu" name="menuUser_Management">
+     <property name="title">
+      <string>User Management</string>
+     </property>
+     <addaction name="actionUser_Groups"/>
+     <addaction name="actionUsers"/>
+    </widget>
+    <addaction name="actionCompany_information"/>
+    <addaction name="actionPreferences"/>
+    <addaction name="menuUser_Management"/>
+    <addaction name="actionDepartments"/>
+    <addaction name="actionVendors"/>
+    <addaction name="actionCustomers"/>
+    <addaction name="actionFees_Service_Charges"/>
+    <addaction name="actionLabel_codes"/>
+    <addaction name="actionAuxillary_Labels"/>
+    <addaction name="actionTax"/>
+    <addaction name="actionDoctors"/>
+   </widget>
+   <widget class="QMenu" name="menuInventory">
+    <property name="title">
+     <string>Inventory</string>
+    </property>
+    <widget class="QMenu" name="menuSales_Invoice">
+     <property name="title">
+      <string>Sales Invoice</string>
+     </property>
+     <addaction name="actionSales_Invoices_by_Whole_Units"/>
+     <addaction name="actionSales_Invoices_by_Units"/>
+    </widget>
+    <addaction name="actionProduct_List"/>
+    <addaction name="actionQuick_Order_Purchase_Order"/>
+    <addaction name="actionInvoices_Stock_revieval"/>
+    <addaction name="actionStock_Valuation"/>
+    <addaction name="actionReturn_Order"/>
+    <addaction name="actionCredit_Note_Recieved"/>
+    <addaction name="actionCredit_Note_Issued"/>
+    <addaction name="menuSales_Invoice"/>
+    <addaction name="actionReset_Quantities_Zero_stock"/>
+   </widget>
+   <widget class="QMenu" name="menuAccounting">
+    <property name="title">
+     <string>Accounting</string>
+    </property>
+    <widget class="QMenu" name="menuPayables">
+     <property name="title">
+      <string>Payables</string>
+     </property>
+     <addaction name="actionInvoice_Summary"/>
+     <addaction name="actionStatement"/>
+    </widget>
+    <widget class="QMenu" name="menuRecievals">
+     <property name="title">
+      <string>Recievals</string>
+     </property>
+     <addaction name="actionInvoice_Summary_2"/>
+     <addaction name="actionStatement_2"/>
+    </widget>
+    <addaction name="actionLodgements"/>
+    <addaction name="actionPayments_Issued"/>
+    <addaction name="actionPayments_Recieved"/>
+    <addaction name="actionInsurance_Reconcillation"/>
+    <addaction name="actionProfit_Loss_Analysis"/>
+    <addaction name="actionBalance_Sheet"/>
+    <addaction name="actionBudget"/>
+    <addaction name="menuRecievals"/>
+    <addaction name="menuPayables"/>
+   </widget>
+   <widget class="QMenu" name="menuReport">
+    <property name="title">
+     <string>Reports</string>
+    </property>
+    <widget class="QMenu" name="menuSales_Report">
+     <property name="title">
+      <string>Sales Report</string>
+     </property>
+     <addaction name="actionCashiers_Log"/>
+     <addaction name="actionDaily_Sales"/>
+     <addaction name="actionScript_Sales_Summary"/>
+     <addaction name="actionDepartment_Sales"/>
+    </widget>
+    <widget class="QMenu" name="menuInventory_Reports">
+     <property name="title">
+      <string>Inventory Reports</string>
+     </property>
+     <widget class="QMenu" name="menuStock_Movement">
+      <property name="title">
+       <string>Stock Movement</string>
+      </property>
+      <addaction name="actionExpired_Drugs"/>
+      <addaction name="actionLow_Stock_Items"/>
+      <addaction name="actionInactive_Items"/>
+      <addaction name="actionBack_Ordered_Items"/>
+     </widget>
+     <addaction name="actionPurchase_Item_Details"/>
+     <addaction name="actionCashiers_Sales_by_Item"/>
+     <addaction name="actionExpiry_Report"/>
+     <addaction name="actionTrends"/>
+     <addaction name="menuStock_Movement"/>
+    </widget>
+    <widget class="QMenu" name="menuGCT_Report">
+     <property name="title">
+      <string>GCT Report</string>
+     </property>
+     <addaction name="actionInput_Tax"/>
+     <addaction name="actionGCT_on_Prescriptions"/>
+     <addaction name="actionGCT_on_Sales"/>
+    </widget>
+    <widget class="QMenu" name="menuInsurance_Report">
+     <property name="title">
+      <string>Insurance Report</string>
+     </property>
+     <addaction name="actionClaims_Report"/>
+     <addaction name="actionInsurance_Summary"/>
+     <addaction name="actionClaims_Analysis"/>
+    </widget>
+    <widget class="QMenu" name="menuScript_Activity_Report">
+     <property name="title">
+      <string>Script Activity Report</string>
+     </property>
+     <addaction name="actionRx_Daily_Count"/>
+     <addaction name="actionBy_Patient"/>
+     <addaction name="actionBy_Doctor"/>
+     <addaction name="actionBy_User"/>
+     <addaction name="actionPrescription_Fee_Totals"/>
+     <addaction name="actionPrescription_Day_Book"/>
+    </widget>
+    <widget class="QMenu" name="menuPayroll_reports">
+     <property name="title">
+      <string>Payroll reports</string>
+     </property>
+     <addaction name="actionPayslips"/>
+     <addaction name="actionTime_Log"/>
+    </widget>
+    <addaction name="actionPurchase_Reports"/>
+    <addaction name="menuSales_Report"/>
+    <addaction name="menuInventory_Reports"/>
+    <addaction name="actionGraphs"/>
+    <addaction name="menuGCT_Report"/>
+    <addaction name="menuInsurance_Report"/>
+    <addaction name="menuScript_Activity_Report"/>
+    <addaction name="menuPayroll_reports"/>
+    <addaction name="actionBudget_Report"/>
+   </widget>
+   <widget class="QMenu" name="menuInternet">
+    <property name="title">
+     <string>Internet</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuGfdgfd"/>
+   <addaction name="menuDf"/>
+   <addaction name="menuPoint_of_sale"/>
+   <addaction name="menuSetup"/>
+   <addaction name="menuInventory"/>
+   <addaction name="menuAccounting"/>
+   <addaction name="menuReport"/>
+   <addaction name="menuInternet"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionDispensary">
+   <property name="text">
+    <string>Dispensary</string>
+   </property>
+  </action>
+  <action name="actionCompany_information">
+   <property name="text">
+    <string>Company information</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+  </action>
+  <action name="actionUser_Groups">
+   <property name="text">
+    <string>User Groups</string>
+   </property>
+  </action>
+  <action name="actionUsers">
+   <property name="text">
+    <string>Users</string>
+   </property>
+  </action>
+  <action name="actionDepartments">
+   <property name="text">
+    <string>Departments</string>
+   </property>
+  </action>
+  <action name="actionVendors">
+   <property name="text">
+    <string>Vendors</string>
+   </property>
+  </action>
+  <action name="actionCustomers">
+   <property name="text">
+    <string>Customers</string>
+   </property>
+  </action>
+  <action name="actionFees_Service_Charges">
+   <property name="text">
+    <string>Fees &amp; Service Charges</string>
+   </property>
+  </action>
+  <action name="actionLabel_codes">
+   <property name="text">
+    <string>Label codes</string>
+   </property>
+  </action>
+  <action name="actionAuxillary_Labels">
+   <property name="text">
+    <string>Auxillary Labels</string>
+   </property>
+  </action>
+  <action name="actionProduct_List">
+   <property name="text">
+    <string>Product List</string>
+   </property>
+  </action>
+  <action name="actionQuick_Order_Purchase_Order">
+   <property name="text">
+    <string>Quick Order / Purchase Order</string>
+   </property>
+  </action>
+  <action name="actionInvoices_Stock_revieval">
+   <property name="text">
+    <string>Invoices ( Stock revieval )</string>
+   </property>
+  </action>
+  <action name="actionStock_Valuation">
+   <property name="text">
+    <string>Stock Valuation</string>
+   </property>
+  </action>
+  <action name="actionReturn_Order">
+   <property name="text">
+    <string>Return Order</string>
+   </property>
+  </action>
+  <action name="actionCredit_Note_Recieved">
+   <property name="text">
+    <string>Credit Note Recieved</string>
+   </property>
+  </action>
+  <action name="actionCredit_Note_Issued">
+   <property name="text">
+    <string>Credit Note Issued</string>
+   </property>
+  </action>
+  <action name="actionReset_Quantities_Zero_stock">
+   <property name="text">
+    <string>Reset Quantities ( Zero stock ) </string>
+   </property>
+  </action>
+  <action name="actionSales_Invoices_by_Whole_Units">
+   <property name="text">
+    <string>Sales Invoices by Whole Units</string>
+   </property>
+  </action>
+  <action name="actionSales_Invoices_by_Units">
+   <property name="text">
+    <string>Sales Invoices by Units</string>
+   </property>
+  </action>
+  <action name="actionLodgements">
+   <property name="text">
+    <string>Lodgements</string>
+   </property>
+  </action>
+  <action name="actionPayments_Issued">
+   <property name="text">
+    <string>Payments Issued</string>
+   </property>
+  </action>
+  <action name="actionPayments_Recieved">
+   <property name="text">
+    <string>Payments Recieved</string>
+   </property>
+  </action>
+  <action name="actionInsurance_Reconcillation">
+   <property name="text">
+    <string>Insurance Reconcillation</string>
+   </property>
+  </action>
+  <action name="actionProfit_Loss_Analysis">
+   <property name="text">
+    <string>Profit &amp; Loss Analysis</string>
+   </property>
+  </action>
+  <action name="actionBalance_Sheet">
+   <property name="text">
+    <string>Balance Sheet</string>
+   </property>
+  </action>
+  <action name="actionBudget">
+   <property name="text">
+    <string>Budget</string>
+   </property>
+  </action>
+  <action name="actionInvoice_Summary">
+   <property name="text">
+    <string>Invoice Summary</string>
+   </property>
+  </action>
+  <action name="actionStatement">
+   <property name="text">
+    <string>Statement</string>
+   </property>
+  </action>
+  <action name="actionInvoice_Summary_2">
+   <property name="text">
+    <string>Invoice Summary</string>
+   </property>
+  </action>
+  <action name="actionStatement_2">
+   <property name="text">
+    <string>Statement</string>
+   </property>
+  </action>
+  <action name="actionPurchase_Reports">
+   <property name="text">
+    <string>Purchase Reports</string>
+   </property>
+  </action>
+  <action name="actionCashiers_Log">
+   <property name="text">
+    <string>Cashiers Log</string>
+   </property>
+  </action>
+  <action name="actionDaily_Sales">
+   <property name="text">
+    <string>Daily Sales</string>
+   </property>
+  </action>
+  <action name="actionScript_Sales_Summary">
+   <property name="text">
+    <string>Script Sales Summary</string>
+   </property>
+  </action>
+  <action name="actionDepartment_Sales">
+   <property name="text">
+    <string>Department Sales</string>
+   </property>
+  </action>
+  <action name="actionPurchase_Item_Details">
+   <property name="text">
+    <string>Purchase Item Details</string>
+   </property>
+  </action>
+  <action name="actionCashiers_Sales_by_Item">
+   <property name="text">
+    <string>Cashiers Sales by Item</string>
+   </property>
+  </action>
+  <action name="actionExpiry_Report">
+   <property name="text">
+    <string>Expiry Report</string>
+   </property>
+  </action>
+  <action name="actionTrends">
+   <property name="text">
+    <string>Trends</string>
+   </property>
+  </action>
+  <action name="actionExpired_Drugs">
+   <property name="text">
+    <string>Expired Drugs</string>
+   </property>
+  </action>
+  <action name="actionLow_Stock_Items">
+   <property name="text">
+    <string>Low Stock Items</string>
+   </property>
+  </action>
+  <action name="actionInactive_Items">
+   <property name="text">
+    <string>Inactive Items</string>
+   </property>
+  </action>
+  <action name="actionBack_Ordered_Items">
+   <property name="text">
+    <string>Back Ordered Items</string>
+   </property>
+  </action>
+  <action name="actionGraphs">
+   <property name="text">
+    <string>Graphs</string>
+   </property>
+  </action>
+  <action name="actionInput_Tax">
+   <property name="text">
+    <string>Input Tax</string>
+   </property>
+  </action>
+  <action name="actionGCT_on_Prescriptions">
+   <property name="text">
+    <string>GCT on Prescriptions</string>
+   </property>
+  </action>
+  <action name="actionGCT_on_Sales">
+   <property name="text">
+    <string>GCT on Sales</string>
+   </property>
+  </action>
+  <action name="actionClaims_Report">
+   <property name="text">
+    <string>Claims Report</string>
+   </property>
+  </action>
+  <action name="actionInsurance_Summary">
+   <property name="text">
+    <string>Insurance Summary</string>
+   </property>
+  </action>
+  <action name="actionClaims_Analysis">
+   <property name="text">
+    <string>Claims Analysis</string>
+   </property>
+  </action>
+  <action name="actionRx_Daily_Count">
+   <property name="text">
+    <string>Rx Daily Count</string>
+   </property>
+  </action>
+  <action name="actionBy_Patient">
+   <property name="text">
+    <string>By Patient</string>
+   </property>
+  </action>
+  <action name="actionBy_Doctor">
+   <property name="text">
+    <string>By Doctor</string>
+   </property>
+  </action>
+  <action name="actionBy_User">
+   <property name="text">
+    <string>By User</string>
+   </property>
+  </action>
+  <action name="actionPrescription_Fee_Totals">
+   <property name="text">
+    <string>Prescription Fee Totals</string>
+   </property>
+  </action>
+  <action name="actionPrescription_Day_Book">
+   <property name="text">
+    <string>Prescription Day Book</string>
+   </property>
+  </action>
+  <action name="actionPayslips">
+   <property name="text">
+    <string>Payslips</string>
+   </property>
+  </action>
+  <action name="actionTime_Log">
+   <property name="text">
+    <string>Time Log</string>
+   </property>
+  </action>
+  <action name="actionBudget_Report">
+   <property name="text">
+    <string>Budget Report</string>
+   </property>
+  </action>
+  <action name="SettingsMenu">
+   <property name="text">
+    <string>Products categories</string>
+   </property>
+  </action>
+  <action name="actionTax">
+   <property name="text">
+    <string>Tax</string>
+   </property>
+  </action>
+  <action name="actionDoctors">
+   <property name="text">
+    <string>Doctors</string>
+   </property>
+  </action>
+  <action name="actionRx_No">
+   <property name="text">
+    <string>Rx No</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

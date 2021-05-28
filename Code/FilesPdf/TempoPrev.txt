@@ -1,0 +1,18 @@
+
+            Patient Name : tester mart
+            Doctor Name : Mathieu teste
+            Prescription : 516548
+
+            Total : 1809
+            NHF : 140
+            Co-pay : 1669
+            Agreed discount : 
+            Discount : 
+
+            INS 1 : 
+            INS 2 : 
+            INS 3 : 
+
+            NHF Pays: $ 140, Patient Pays $ 1669
+
+            

@@ -1,0 +1,189 @@
+Ok so :
+1) updated design
+
+##Inventory ###
+Updated selection by desc num or barcode
+
+#Add new drugs ##
+Updated according to what we've discussed 
+Remaining feature : Edit a drug .
+
+Till here is it ok ? The font is hard to read.
+which one ?under the details tab.
+
+Category : change background to white. (the background is good, but take out the stripes, and just more of a faded background. I am talking here about category combobox. Yes change to white
+1) Details tab : change font to more readable one .
+2) Barcode : is ok ? Yes it is ok
+3) MOVEMEnt : Yes that is ok.
+That's all for adding drugs .
+Inventory is ok ? I would make the id colum smaller and the description column larger. Okgive me 2 mins OK
+Remaining feature on inventory is Edit. Does that mean, we cannot edit at the moment? Yes for now you can add delete etc , I'll implement edit at the end of the software, will make it easier as if there is any change now it will take time to update the edit feature.
+You can test other buttons / options so we move on to next page
+No need to use the search button, you just type in directly and it searches automatically. give me 2 minutes.
+I want to be able to click on the item, and it comes up in a box with all the details. that is the edit feature, isn't it ? Yes that is the edit feature. Ok then is there any way we could have some of the fields hidde n. we could but I've made less important fields distant from more important one, I don't take they cause a problem, it's easier to retrieve data directly from the table than database ( faster ) . True but i would prefer it hidden, so other users are not overwhelmed with information. I'll see, maybe with a less attractive color ? like a gray disabled field that could work.but let me give you a suggesttion of the fields i want upfront.
+
+Num, Description, gen name, Packsize. Q.O.H, Price, Tax code, barcode, Type, category, Supplier. 
+Also change the EDIT button to "VIEW/EDIT".
+Got it
+So, search button maybe remove it's useless
+Edit : remaining CHange to VIEW/EDit
+Delete : OK
+Refresh : OK
+Select : Remove useless as you select directly in dispensary. Yes
+new : OK
+Close : OK 
+
+#### Purchase and sales history and P.O.S ### We'll discuss those later.
+ok
+
+Dispensary : 
+You add a new prescription by clicking add and delete by clicking delete.
+you click add first to generate a new drug field. No I dont like that. Cany we just type, once we have selected a blank field under column. Type then press enter to select. OR press F2 to select a new drug? ok
+
+wait//.//.. let me see what it is like? 
+No need to search in combobox just type in name of drug to get suggestions. ok.
+
+I do not want f 2 to bring me to that screen. I want F2 to serrve the function that "add" now serves.....
+
+What F2 is currently doing I would prefer if from the inventory screen, 
+In Add it adds a line then you write a drug in drug column then qty etc .. Yes that is what f 2 is so replace add by f2
+Yes. 
+Ok
+
+What F2 is doing now.. should not be here, but on the inventory . Got it, it is in both at the moment. ok.
+
+Also. for Quantity, I want us to be able to free type a quanity instead of selecting from a drop down box.. Oas sometimes we can have quantities up to 500 Ok you can also type in even if it's a drop down box I can either make it totally free or raise it to 1000. Make it totally free.Ok
+
+Make the drug colum larger that the rest. Ok 
+
+Delete Quote. Ok I'll need to replace it by something else : for design matters. Replace it with F10 - Submit. ( for the purposes of submitting the insurance claim for adjucation.)
+
+Additionally, I basically want to be able to process a whole rpesctiption without neccessarily having to use the mouse, only the keyboard.
+
+Delete  ADD & DELETE buttons.
+Add we've already discussed it I'll delete
+Delete : ? why you can select a row then delete it. ( cant we do that by just pressing delete on the keyboard? ) can make it both a button and shortcut. I  would prefer if we could select  a line, then press delete on the keyboard !to delete that line. We dont need a button as it may confuse other users.
+Ok
+
+Move Rx No up to that field.
+
+where we hace Rx boc. I would prefer if we use that area for previewing the insurance adjucation results. (information such as cost covered by insurances, or if it was rejected,, the reason for the rejection, etc... Ok
+
+Select patient : how does this work. do we have to press F4 first, and it brings up this box ?Yes F4 or Patient button.
+
+
+Search by typing : OK. Yes.
+Under any field that has prices/ cost, put "$" before nu,bers Ok
+so Search Patient : 
+u search directly by typing name and you get suggestions .
+Insert, to add a new patient .
+History to bring its prescription history .
+Delete to delete a patient and its history.
+Swipe card I don't know what is it for. I want this field to be used for, once we swipe a patients health insurance card, all the information comes up. (so it would add all the details for a new patient that is not currently in the system. or it would select a pre-existing patient, with that matching details.) Ok
+Source is either private or public.
+Doctor is a list with suggestions of registred doctors
+You can add a doctor under setup. Ok good
+Rx Number is generated +1 after each prescription .
+It can be reused if you press F9 delete Rx.
+You can set your Rx number if you want to change it under settings.
+Password is AutoPharmaxy if I remember
+AutoPharmaxy. OK. do you want me to test it out?
+if you want. So assuming I have done this. the system would then start counting the Rx number from 516548 onwards correct?  Yes of course. Great
+Here is it. Perfect
+Ok let me test a prescription and see the process
+Before pressing next you can print a pdf
+by pressing F6 : then you get a preview you print by clicking print.. Ok Can we make it dot text instead of pdf so we can print it from a receipt printer... Additionally. I made it actually doing both, txt file being temporary.
+In FilesPdf folder with rx no as a title of files.That would be a little challenging. No way we could just be able to have it printed from a reciept printer after pressing . Sure that would be last steps . ok. 
+SO Next adds this to ViewRx database , and patient and prescription databases . and generate next Rx
+
+ViewRx - F5 : Your moving a little too fast.
+sorry. I am going to go back to the receipt.
+ from the reciept I want it to show the details of the transaction, such as the drugs and cost etc. I will send you a picture of what I want the printed receipt to have.
+
+
+Also I wanted to know, how will we print the labels??? 
+It can be printed too with details. Show me You mean how do you add labels ? No what would i press to print the labels via a label printer
+You want the label to be printed separatly by a receipt ? or with transaction details . no we need a dispensing label printed with the patient and medication on it. So independent of the F6 print
+Repalce quote with F7-Print Label. yeah tht can work.
+Add a button called "Create a backup database" so that you can save your database when you want in case you delete files or something ( for security reasons ) yes. that would be useful.
+As for adding labels; you'll go under setup 
+ 
+yes. thats fine.
+
+Then in label field in dispensary you just type in the code.yes. correct
+You update tax under setup. yes
+aswell as fee service charges
+Jadep if drug is in jadep category it applies its fees. yes
+You add categories under settings ( or deleteyes.. ok
+We move to view RX ( F5 ) ?yes
+Here I have 2 questions : 
+What is script No ? 
+And what is Ok for ? It's basically the same feature as refill ? Then I don't see its useyes it is similar to refill. but not all prescriptins will be refillable. so we need to be able to view a past prescrition for a patient and compare with his current medication in order to ensure compatibility and no errors occuring. so it will be necessary . I tsoe eb separate from the refill function
+OK got it.
+Script No ?
+this is basically a running number to help identify each prescription that has been processed. it will act as a prescription id number that we can use to quickly find a given prescription via the hard copy instead of electronically. Ssoo  replace with Rx No ? It is unique yes. it should be  unique
+each new prescriotion should have its own rx no Yes that is the case
+Ok so reversal is last step
+Label to type in a more complex label that isnt included in codes . 
+Calculator brings a calculator 
+Patient you've seend it
+View Rx OK, add Ok 
+Internet brings the navigator
+print weve discussed
+quote : remove
+drugs replace its function.
+Close : close
+Next weve discussed
+F9 delete weve discussed.
+quote is to be replaced with print label.  YI ewisll let you know the size of the dispensing label so that it can be configured accordingly with the instructions.
+
+Ok so besides those updates in Dispensary and inventory .
+Remaning features are P.O.S , sales and purchases history . Right ?yes
+Ok so let's get through those .
+
+1) ##############. P.O.S ###########################
+From A to Z so we won't need a tv session again
+
+ok so the point of sale program should allow us to sell over the counter items . som will have tax (vat) some wont. also it needs to allow the user to pay via credit or debit cards, cash or cheques. al so it needs to be tied in to the dispensary to allow the cashier to find the patients active script, refereably by the rx no. and collect payment. all this needs to be tied in with the stocks to allow correct inventory levels whether for prescritpion items or over the counter items. Ok so cash and cheques would be manual . 
+Credit cards u proceed that via a payment machine or need to implement ? done via a separate machine. Ok then if patient pays with a credit card u select credit card on software and it adds to database.yes.
+Can you send me a design including all P.O.S options ?ok. no problem. will do
+Good.
+We move to purchase and sale ? ok 
+
+#SALES HISTORY ###
+So whenever you click next to a prescription on dispensary tab. what happens next ? How is it connected to sale tab ?
+So after F8 next is pressed , the person at the P.O.S  would pick up the prescription by either
+1. typing the rx no into a com box or by 
+2. pressing a button which brings up a dialog box which all the uncashed prescriptions to be cashed. The cashier would then select the appropriate one, and cash it (process the transaction throught the P O S).
+after it has been cashed the details of the transaction would be populated in sales history.
+what you mean by the person in P.O.S isn't it the same person that use the software for dispensary etc ..? NO...
+So that person will only have P.O.S interface and not all of those sales history etc. 
+Well in a pharmacy we have differnt computers at different stations.... So the person at the cashiers station would use the P.O.S area of the  system.  While the Pharmacist would be using the Dispensary area of the system. Ok you're connected locally ? Yes
+
+ok as for
+#### PURCHASE HISTORY ###
+
+Supplier: The company that supplied the item for that trasaction.
+Package : 
+I mean from where you get those infos ? There must be an interface with fields where you type in those infos whenever you purchase a product right ? Yes. let me look
+ So all this information would be filled in after we have used the Invoices (Stock Recieval) option
+Ok then you'll need to send me 2 interfaces :
+P.O.S
+Stock recieval ( purchases infos )ok
+Ok that would be all ? We've covered all software features ?
+No. Did  you look at the pdf I had originall sent? Yes I did 
+But besides Purchase, sales inventory dispensary P.O.S what is remaining ? REports etc. All the buttons need to be 
+functioning.
+
+Ok so here is how we'll proceed : 
+Next is for P.O.S sales and purchases ( stock recievals ) 
+Last is for remaning menu features suck as reports . 
+
+is theree a way I can get to install what is currently done, so I can go through, and prepare a little better?
+?Sure I'll compile it after those minor updates . Great, because then I can better help to guide you as to the functionalities etc.. .
+Good .
+So meanwhile it would be good to send me P.O.S and stock recievals interface for the next step. Ok
+
+will get on it
+Good so see you on fiverr
+

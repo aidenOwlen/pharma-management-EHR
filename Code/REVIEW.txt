@@ -1,0 +1,109 @@
+Dispensary Screen : 
+1) design ..
+2) Selecting drugs : From inventory right ?
+
+No, I would prefer if we typed in the name under drug, and as we enter characters it prompts the user with a list of suggested items with that spelling. Ok then u select quantity and cost is automatically adjusted ? Yes.
+What about Insurance ? Add a drop down menu with Yes anor No Ok.
+Fees - Automatic : under setup. (there will be a defined fee for insurance, and one for no insurance ) .So there is only 2 fees values : One if INS is YES the other if INS is NO ? Yes.
+And you'll specify that in Fee service charges tab ? Yes
+So Fee service charges : when you click it should pop a window with 2 inputs : one for ins the other for no ins ? Yes but make it three fee.What is the third ? lets call that Jadep (a government insurance program that attracts a sepaerate fee. ) so it won't affect dispensary fee column.
+Insurance Yes : Fee1
+Insurance No : Fee2
+when should jadep fee be applied ? Sorry for the trouble but under  Caterogies from the inventory, lets add a category called Jadep. so once an item from this category is selected then Fee 3 would be applied automatically. Got it .
+Label : We would enter predefined codes, seperated by comma's that give instructions to be printed on the drug label. The label codes are put in under setup. (for example: 1T,3X,PC ; would read on the printed label as " One Tablet to be taken three times daily after meals."
+I need list of all options then. ( could it be made editable so we could add the label codes ourselves under setup.?)
+You click on setup => then label codes => then a window popup with : 
+A form with fields , one for codes and one for label text that fits it. 
+Yes and a 2 columns table showing codes and label texts. Yes
+According to what should one or another label popup here ? Will you type int the code ( ex 1T) Here ? Yes, We will type in all the codes we need here. 1T,2x, 
+And that will popup all texts corresponding? Yes, 
+but lets use the comma's as seperators between codes. (so 1t would translate to something, and 2X will translate to another ) aND They will all show in a text separated in paragraphs. No just a continuous text seperated by a space or nothing at all ? By a space.
+(if we need to type something more complex for a label. we would use the F3 option, which will pop up a separate window, where we can free type the instructions to be printed with out using code.).
+Got it ,
+
+Days : an editable field where one would enter how long the medication will last for. (it is also needed for the insurance, (as they cover medication for a specified number ofdays)
+ok so just an editable field accepting integers .
+Yes number only.
+Refills : editable field accepting numbers only. (but if a number if inputed in this field, we want it to be printed on the prescription label ) so refills is added to label text. Yes
+Extended : total calculated price including the fees. ( COST + FEES + TAX -{assumed insurance benefit + NHF }= Extended ) Where is assumed insurance benefit? we would yes
+Where to see or calculate insurance benefit ? so I will have to contact the insurance company and get back to you on this. Ok will you do this now or we let Extended field for later ? Later. ( I still have one hour of avalaibility and we still should go through other options ) yes lets do it.
+Tax : Should be a calculated figure that comes up automatically, based on if an item was taxable from the  inventory . 
+Yes but if taxable : ? shows the tax amount. is it this ? No delete that. It should go under set up, where an editable field that says tax, where we would input so add an option under setup : when you click : it poups a field where u type in a tax number :
+if a product is taxable it would apply to it. if not it will just show $0.00 in the tax field. Tax is a % ?Yes Got it.
+NHF : Shows the amount thaat NHF insurance pays. Where ? I mean where to get this info from. 
+NHF benefit under inventory (this is an editable field, where we input numbers/ cost that NHF covers per unit. Got it.
+Void : Editable Field where one would enter Y (for YES) or N (for NO)  once Y is selected for respective items. We would then press the reveral button, and all insurance  claims for that particular prescription will be reversed. So Void is a combobox containing Yes and No : If No : do nothing 
+If Yes and you click reversal : "all insurance claims for that particular prescription will be reversed" I don't really get this what do you mean by reversed ? what should exactly happen ? 
+the process is - Once the products are inputed and Y for INS is selected per item. Insurance cards are then swiped, we would press F10- Submit ( this button needs to be added.) After  this is pressed a message would be sent to the various insurance companys via the internet sending them a summary of the transaction, and the assumed amounts that the insurance company would pay. (the insurance company would then send us back an approved or rejected messsage for the claim.
+Assuming a claim is approved, and a change needs to be made, we would need to reversse that insurance claim transaction. So in this instance a message would be sent back to the insurance company for  reversal of said claim.... (we will have to get further clarification for the insurance companies, and gateway channel.)
+Taht's what you mean by reverse claims ? that means send a mail. (I am not sure what exactly happens, but it is not a mail. we usually get an instantaneous authorization code for the transaction. I assume it is similar to the way in which a credit card/ debit card transaction is processed.) Will you know that ? I am going to have to try. But I assume the y may want to communicate with you? the "y" ? They* the insurance providers/ insurance gateway provider, yeah no problem so we let that as the last step ?yes
+
+PRINTED : Not Neccessary
+OS ; Not Neccesary
+IND; Not neccessart
+DIAGNc; Not neccessart
+DISCOUNT: Put Y or N here where if Y is selected per item it applies the discount percentage selected at the bottom from the drop down menu here. (but 
+
+So and agreed discount ? Under setup we need an option for discount where we would input discount rates.
+Discount rates ? please specify what should the window contain and how . this should pop up a windown showing a table with two editable columns titles Name and Percentage. Got it?
+Names ? for example 10 give 10%, 5 gives 5%, couples give 80% 
+Ok so you add Names that convert to percentage in dispensary windw and point of sale window. pretty much any where that has a discount drop box. OK got it .
+Rx number is generated automatically starting with "1" No. Generated automatically in ascending numerical order, but let us choose the starting number: descending you mean
+for ex 78745  78744.. ? or ASC ? ASC. Got it will you choose now ? no. Perhaps put a option under setup called " Starting Rx #" (so first prescription filled on system will start with that number, and asc from there.) program won't work then if you don't fill your settings infos first. yes. Ok but if you change it later, the starting number. Perhaps make it password protected so that only the sys admin/ power user can alter that field. Ok
+
+Why doctor has 2 fields ? Only need one.. But when selecting doctor from drop down menu, preview doctors Last name, first name, and registration Number.
+Where is that ? You don't type in dosctors name manualy ? well no, you should have to choose a doctor from a list. so it'll be a long list yes, so by typting in characters it will filter out based on spelling/ registration #
+Got it : where you enter doctords name and registration number ? Add an option under setup
+. which creates a pop up menu for this. Ok
+Total is extended ? No. Grant total before insurance. ( Drug cost+ tax+ fee (per item) ) so item1 cost*qty + tax+fee + ( item2Cost * qty + tax + fee ) = Total yes
+NHF is NHF
+Drug charges : delete
+below ? Change 
+3000 to INS 1 which will show what insuranc 1 pays.
+Add INS 2 which will show what insurance 2 pays
+Add INS 3 which will show what insurance 3 pays.
+Co-Pay will show cost customer will pay minus all insurances. ( Co Pay= Total - (NHF +INS1 + INS 2 + INS 3 )
+Where you have "NHF Pays: $0.00 You pay $0.00," change to " NHF Pays: $ 0.00, Patient Pays $ 0.00" where the Patient Paysy will be the co-pay right. co pay - discount
+Ok
+I've got couple more minutes then I'd have to go for a while .
+So after we fill this : Next => and it adds to database and start with new RxNo.
+You can also print : What do you want to include in the pdf ? that right box ? or all table infos ?  only what is in the right box. But we need to use F6- Print button to pop up a window, that will show a preview of label instructions to be printed. Got it .
+CTRL F9 will delete all and keep the RXno to be used again with another product.
+Calc & internet it's obvious
+Drugs it's inventory
+Patient it's Patient ..
+
+
+2) Add products :
+So that one contains 3 tabs : Details , Barcode and movement
+Units of measure : Each and ?Whole
+Expiry : delete
+NDC : make it editable so we can imput the characters, as we need to use this code for insurance processing purposes.
+what does codePostNet means- I dont know you can delete
+Ok , on options there is product number and barcode - not neccessary, but we would love to be able to select items by name, barcode or product number.
+You mean in that search bar ? Now I've coded it to select by DESCRIPTION ( name ) make it so we can choose wheter to search by description, barcode or product number. (perhaps a pull down bar which allows us to choose the parameter.) Okay
+Include Name , Include number that's just to print ? and that means description and Number you type in manualy ? yes
+Word, pdf ? PDF. So pdf with fields containing all new products infos .It will be generated with product number as a name . No I want product number and name on the pdf. But print may not be neccesaary here. Perhaps we can print inventory list under reports?
+All inventory list ? that would be so huge. Yes but we would be able to print by category? so we could print each catergory separate
+What do you mean by category here ?  Lets add a field under Description, and generic name. Lets call this field category... where we would select a drop down menu ;  of the various categories :  (I'll need a list of categories ) categories would be ; Prescrition drugs, otc drugs, cosmetics, confectionery/ snacks, gift items, toys, general & sundries, stationery & books, ) if possible I would like to be able to add/ edit categories under settings.
+So first settings option : add / edit categories . (Yes)
+What's movement for ? to give a quick preview of product history
+Got it . but options ? remove options and just show the preview here, such as Purchases, sales etc, and dates .
+Got it , please specify if there is anything to add / remove on this page , once for all
+
+under movement- remove check to update stock.
+under barcode - remove include name, include number, codepostnet drop down otpion
+under details - remove Max dosage, Bin no, and expiry
+Change the add button to Save. (let me know what you think?)
+
+ok thats it
+ok so I'll need to remove columns too. Yes too many columns. 
+Remove -
+I will remove what you said I should remove from the adding product page . Ok an will that automatically take it off the lookup screen.?  no it won't I'll have to update the code. ok
+For lookup screen we dont need to see every catergory/ column. I can tell you which ones. to keep . What's the point on filling them in add product page if they can't be seen ? ok/ I thought we would just double click on the item if we wanted to see all details.
+What about making important columns first and less important distant ? yes that can work
+
+
+Menu options :
+1) Settings : 
+     - Add / edit categories of products .

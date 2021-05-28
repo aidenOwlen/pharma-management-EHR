@@ -1,0 +1,31 @@
+Sales History : ##########5
+SHRefresh
+SHClose
+SHDate1
+SHDate2
+SHTable1
+SHTable2
+SHPrint
+SMy_Date
+
+C:\\Users\\achill123\\Desktop\\\ma_base.db
+
+Purchase History : ###############
+PHClose
+PHProduct
+PHPrint
+PHTable
+PHTotals
+PHQty
+PHValue
+PMy_Date
+
+##INVENTORY ##########
+DrugList : Input lookup
+Search button : SearchDrugs
+Edit button : EditDrugs
+Refresh button RefreshDrugs
+New button : NewDrugs
+close button : CloseDrugs
+DrugsTable
+Drug_Date

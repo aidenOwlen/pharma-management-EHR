@@ -1,0 +1,14 @@
+Dialog name : PatientDialog
+Search for : PatientSearch
+Swipe card : PatientSwipe
+Cancel : PatientCancel
+Ok : PatientOk 
+Table : PatientTree
+
+PatientInsert
+PatientHistory
+PatientView
+F2-VIEW
+
+
+

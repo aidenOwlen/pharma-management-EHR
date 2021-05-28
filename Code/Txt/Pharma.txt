@@ -1,0 +1,25 @@
+#Main Window : 
+File tab : rename to settings .
+Screen should be called dispensary / prescription
+Iventory : Dialog with all drugs added.
+Setup : not necessaire
+Update : not necessaire 
+Internet : not necessaire
+window : not necessaire 
+help : not necessaire 
+activity : not necessaire insead add two options : 
+Dispensary : Which is what we are working on ( main window )
+Point of sale : Carries us to the cashing terminal
+Account Management : should have two buttons : 
+"payable accounts" : Screenshot : allow to view and add suppliers  and
+receivables / charge accounts " ( He sent screenshots ) : 
+button called "Invoice which once clicked brings you to the data entry screen explained in inventory control on the pdf )
+
+Bottom menu : 
+Reversal :
+Calculator
+Internet : 
+Close
+
+
+Lookup : 
